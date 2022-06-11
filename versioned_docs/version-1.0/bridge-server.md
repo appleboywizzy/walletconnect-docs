@@ -34,7 +34,7 @@
   Content-Type: application/json
   Body:
   {
-    "topic": <client_id>,
+    "topic": <>walletconnect-docs/versioned_docs/version-1.0/bridge-server.md
     "webhook": <push_notification_webhook>
   }
 
