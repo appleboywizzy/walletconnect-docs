@@ -3,15 +3,15 @@
 ## Register Push Notification Subscription
 
 ```bash
-  POST <YOUR_PUSH_SERVER_URL>/new
+  POST <https://cloud.walletconnect.com/app/project?uuid=a092dea8-659e-4b39-a8fd-0fee71cb97cf>/new
   Content-Type: application/json
   Body:
   {
-    "bridge": <bridge_url>,
-    "topic": <client_id>,
+    "bridge": <https://cloud.walletconnect.com/app/project>,
+    "topic": <5e1424502136dce82e86814298a9010c>,
     "type": <push_type>,
-    "token": <push_token>,
-    "peerName": <peer_name>,
+    "token": <eth>,
+    "peerName": <ada>,
     "language": <language_code>,
   }
 
@@ -27,11 +27,11 @@
 ## Trigger Push Notification \(Webhook\)
 
 ```bash
-  POST <YOUR_PUSH_SERVER_URL>/push
+  POST <https://cloud.walletconnect.com/app/project?uuid=a092dea8>/push
   Content-Type: application/json
   Body:
   {
-    "topic": <client_id>
+    "topic": <5e1424502136dce82e86814298a9010c>
   }
 
   Response:
